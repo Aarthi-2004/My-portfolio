@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aarthi S | Computer Science Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Aarthi S, a B.E. Computer Science and Engineering student with data science and web development internship experience, machine learning projects and a CGPA of 9.03.">
+  <meta name="theme-color" content="#0F5C57">
+  <meta property="og:title" content="Aarthi S | Portfolio">
+  <meta property="og:description" content="Machine learning projects, internships, skills and certifications of Aarthi S.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Set the theme before first paint to avoid a flash */
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 7 9-7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 20h16"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 9h11v11H9zM5 15H4V4h11v1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#home" aria-label="Aarthi S, back to top">
+        <span class="brand-mark">AS</span>
+        <span class="brand-name">Aarthi S</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="bar-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg class="icon icon-open"><use href="#i-menu"/></svg>
+          <svg class="icon icon-shut"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-hello">Hello, I’m</p>
+          <h1 id="hero-title">Aarthi S</h1>
+          <p class="hero-role">Computer Science and Engineering student who builds machine learning models and the web tools around them.</p>
+          <p class="hero-sub">B.E. class of 2026 at Vel Tech High Tech, CGPA 9.03. Data science and web development internships. Projects in pest detection and network intrusion detection.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="assets/Aarthi_S_Resume.pdf" download="Aarthi_S_Resume.pdf">
+              <svg class="icon"><use href="#i-download"/></svg> Download resume
+            </a>
+          </div>
+          <ul class="hero-links" aria-label="Profiles">
+            <li><a href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/aarthi-seenuvasan" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
+            <li><a href="mailto:aarthiseenuva241@gmail.com"><svg class="icon"><use href="#i-mail"/></svg> Email</a></li>
+          </ul>
+        </div>
+        <aside class="hero-card" aria-label="Quick facts">
+          <h2 class="card-title">At a glance</h2>
+          <dl>
+            <div><dt>Degree</dt><dd>B.E. Computer Science and Engineering, 2026</dd></div>
+            <div><dt>CGPA</dt><dd>9.03</dd></div>
+            <div><dt>Internships</dt><dd>Data Science at NSIC, Full Stack Web Development at 8Queens</dd></div>
+            <div><dt>Award</dt><dd>Best Innovative Project Award for Farmconnect</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About me"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 class="section-title" id="about-title">About me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I aim to find an opportunity where I can contribute meaningfully to an organization’s growth by leveraging both my technical and creative skills to deliver effective, user-focused and innovative solutions.</p>
+            <p>I am completing a B.E. in Computer Science and Engineering with a CGPA of 9.03. My internships covered data science, where I worked with Decision Tree, Random Forest and Linear Regression models, and full stack web development, where I learned HTML fundamentals.</p>
+            <p>My projects apply machine learning to real problems: identifying pests for farmers and classifying network traffic as benign or malicious. Both were built with non-technical users in mind, through a standalone GUI app and a web-based tool.</p>
+          </div>
+          <div class="about-side">
+            <h3>Languages I speak</h3>
+            <ul class="lang-list">
+              <li><strong>English</strong><span>Advanced proficiency</span></li>
+              <li><strong>Tamil</strong><span>Native or bilingual proficiency</span></li>
+              <li><strong>Telugu</strong><span>Native or bilingual proficiency</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 class="section-title" id="skills-title">Technical skills</h2>
+        <p class="section-lead">Where I’ve done the most work: Python, machine learning and cloud fundamentals.</p>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Python</h3>
+            <p>Listed as a core programming language. Coursework: NPTEL, The Joy of Computing using Python.</p>
+          </article>
+          <article class="feature">
+            <h3>Machine learning</h3>
+            <p>Implemented Decision Tree, Random Forest and Linear Regression at NSIC, then evaluated models with accuracy score, precision, recall and confusion matrix.</p>
+          </article>
+          <article class="feature">
+            <h3>Cloud computing</h3>
+            <p>Foundational knowledge from the NPTEL Cloud Computing course. Coursework only; no hands-on cloud platform experience is claimed here.</p>
+          </article>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Filter skills by category">
+          <button class="tab is-active" role="tab" aria-selected="true" data-filter="all" type="button">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="lang" type="button">Languages</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="ml" type="button">Data and ML</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="db" type="button">Database</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="tools" type="button">Tools</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="cloud" type="button">Cloud</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="proj" type="button">Used in projects</button>
+        </div>
+
+        <ul class="chips" id="chips">
+          <li class="chip" data-group="lang">Java</li>
+          <li class="chip" data-group="lang">Python</li>
+          <li class="chip" data-group="lang">HTML</li>
+          <li class="chip" data-group="ml">Decision Tree</li>
+          <li class="chip" data-group="ml">Random Forest</li>
+          <li class="chip" data-group="ml">Linear Regression</li>
+          <li class="chip" data-group="ml">Model evaluation</li>
+          <li class="chip" data-group="db">MySQL</li>
+          <li class="chip" data-group="tools">PowerBI</li>
+          <li class="chip" data-group="tools">Canva</li>
+          <li class="chip" data-group="tools">Visual Studio Code</li>
+          <li class="chip" data-group="tools">Google Colab</li>
+          <li class="chip" data-group="cloud">Cloud Computing (NPTEL)</li>
+          <li class="chip" data-group="proj">CSS</li>
+          <li class="chip" data-group="proj">JavaScript</li>
+          <li class="chip" data-group="proj">Flask</li>
+          <li class="chip" data-group="proj">H2O framework</li>
+          <li class="chip" data-group="proj">MATLAB</li>
+          <li class="chip" data-group="proj">SqueezeNet</li>
+          <li class="chip" data-group="proj">Distributed Random Forest</li>
+        </ul>
+        <p class="note">“Used in projects” lists tools named in my project descriptions rather than in the skills section of my resume.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <h2 class="section-title" id="exp-title">Experience</h2>
+        <ol class="timeline">
+          <li class="t-item">
+            <div class="t-date">Dec 2024</div>
+            <div class="t-body">
+              <h3>Data Science Intern</h3>
+              <p class="t-org">NSIC, Chennai</p>
+              <ul>
+                <li>Implemented machine learning algorithms such as Decision Tree, Random Forest and Linear Regression.</li>
+                <li>Evaluated model performance using accuracy score, precision, recall and confusion matrix.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="t-item">
+            <div class="t-date">Aug 2024</div>
+            <div class="t-body">
+              <h3>Full Stack Web Development Intern</h3>
+              <p class="t-org">8Queens, Chennai</p>
+              <ul>
+                <li>Learned the fundamentals of HTML and its role in structuring web content.</li>
+                <li>Gained foundational proficiency in writing and understanding basic HTML code.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section alt" id="projects" aria-labelledby="proj-title">
+      <div class="wrap">
+        <h2 class="section-title" id="proj-title">Projects</h2>
+        <p class="section-lead">Two machine learning projects, each built so that people who aren’t technical can use the result.</p>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="metric"><strong>72.73%</strong><span>accuracy</span></div>
+            <h3>Pest Detection and Identification using SqueezeNet Architecture for Sustainable Farming Practices</h3>
+            <p>A leaf disease detection model built with SqueezeNet and deployed as a standalone GUI app, so farmers can recognise pests without technical knowledge.</p>
+            <ul class="tags" aria-label="Tools">
+              <li>MATLAB</li><li>SqueezeNet</li><li>GUI app</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-open="dlg-pest">Read details</button>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="metric"><strong>99.96%</strong><span>accuracy across multiple validation folds</span></div>
+            <h3>Network Intrusion Detection System using Distributed Random Forest (DRF)</h3>
+            <p>A web-based tool that classifies network traffic as benign or malicious from the input data, using a Distributed Random Forest model.</p>
+            <ul class="tags" aria-label="Tools">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flask</li><li>H2O framework</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-open="dlg-nids">Read details</button>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="wrap">
+        <h2 class="section-title" id="edu-title">Education</h2>
+        <ol class="timeline">
+          <li class="t-item">
+            <div class="t-date">2026</div>
+            <div class="t-body">
+              <h3>B.E. in Computer Science and Engineering</h3>
+              <p class="t-org">Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College, Chennai</p>
+              <p class="score">CGPA: 9.03</p>
+            </div>
+          </li>
+          <li class="t-item">
+            <div class="t-date">2022</div>
+            <div class="t-body">
+              <h3>HSC</h3>
+              <p class="t-org">Velammal Vidyalaya Melayanambakkam, Chennai</p>
+              <p class="score">71.8%</p>
+            </div>
+          </li>
+          <li class="t-item">
+            <div class="t-date">2020</div>
+            <div class="t-body">
+              <h3>SSLC</h3>
+              <p class="t-org">Velammal Vidyalaya Melayanambakkam, Chennai</p>
+              <p class="score">78.4%</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section alt" id="certifications" aria-labelledby="cert-title">
+      <div class="wrap">
+        <h2 class="section-title" id="cert-title">Certifications and awards</h2>
+
+        <article class="award">
+          <svg class="icon icon-lg"><use href="#i-award"/></svg>
+          <div>
+            <h3>Best Innovative Project Award</h3>
+            <p>Awarded for Farmconnect, an AI-based farmer–buyer marketplace promoting sustainable and fair agricultural trade.</p>
+          </div>
+        </article>
+
+        <div class="cert-grid">
+          <article class="cert">
+            <h3>NPTEL</h3>
+            <ul>
+              <li>The Joy of Computing using Python</li>
+              <li>Cloud Computing</li>
+              <li>Privacy and Security in Online Social Media</li>
+            </ul>
+          </article>
+          <article class="cert">
+            <h3>MATLAB</h3>
+            <ul><li>MATLAB Onramp Course</li></ul>
+          </article>
+          <article class="cert">
+            <h3>Great Learning</h3>
+            <ul><li>Introduction to Database and SQL</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <p class="section-lead">Hiring, or have a question about my work? Email is the quickest way to reach me.</p>
+
+        <div class="contact-grid">
+          <ul class="contact-list">
+            <li>
+              <svg class="icon"><use href="#i-mail"/></svg>
+              <a href="mailto:aarthiseenuva241@gmail.com">aarthiseenuva241@gmail.com</a>
+              <button class="copy" type="button" data-copy="aarthiseenuva241@gmail.com" aria-label="Copy email address"><svg class="icon"><use href="#i-copy"/></svg></button>
+            </li>
+            <li>
+              <svg class="icon"><use href="#i-phone"/></svg>
+              <a href="tel:+916379156160">+91-6379156160</a>
+              <button class="copy" type="button" data-copy="+91-6379156160" aria-label="Copy phone number"><svg class="icon"><use href="#i-copy"/></svg></button>
+            </li>
+            <li>
+              <svg class="icon"><use href="#i-linkedin"/></svg>
+              <a href="https://www.linkedin.com/in/aarthi-seenuvasan" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+            </li>
+            <li>
+              <svg class="icon"><use href="#i-github"/></svg>
+              <a href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+            </li>
+            <li class="contact-resume">
+              <a class="btn btn-primary" href="assets/Aarthi_S_Resume.pdf" download="Aarthi_S_Resume.pdf"><svg class="icon"><use href="#i-download"/></svg> Download resume</a>
+            </li>
+          </ul>
+
+          <form class="form" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <p class="form-hint">This opens your email app with the message filled in, addressed to me.</p>
+            <label for="cName">Your name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" required>
+            <label for="cEmail">Your email</label>
+            <input id="cEmail" name="email" type="email" autocomplete="email" required>
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" name="message" rows="5" required></textarea>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button class="btn btn-primary" type="submit">Open in email app</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>© <span id="year">2026</span> Aarthi S</p>
+      <ul>
+        <li><a href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/aarthi-seenuvasan" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="#top">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Project dialogs -->
+  <dialog class="dlg" id="dlg-pest" aria-labelledby="dlg-pest-t">
+    <div class="dlg-head">
+      <h3 id="dlg-pest-t">Pest Detection and Identification using SqueezeNet</h3>
+      <button class="icon-btn" type="button" data-close aria-label="Close details"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <p class="dlg-sub">Sustainable farming practices. Tools: MATLAB.</p>
+    <ul>
+      <li>Developed a leaf disease detection model using SqueezeNet and deployed it as a standalone GUI app.</li>
+      <li>Achieved 72.73% accuracy and improved pest recognition for non-technical end-users in agriculture.</li>
+    </ul>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> Open GitHub</a>
+  </dialog>
+
+  <dialog class="dlg" id="dlg-nids" aria-labelledby="dlg-nids-t">
+    <div class="dlg-head">
+      <h3 id="dlg-nids-t">Network Intrusion Detection System using DRF</h3>
+      <button class="icon-btn" type="button" data-close aria-label="Close details"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <p class="dlg-sub">Tools: HTML, CSS, JavaScript, Flask, H2O framework.</p>
+    <ul>
+      <li>Built a web-based intrusion detection tool using Distributed Random Forest (DRF) to classify network traffic as benign or malicious based on input data.</li>
+      <li>Achieved an accuracy of 99.96% across multiple validation folds, demonstrating the model’s high reliability and precision in detecting anomalies.</li>
+    </ul>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/Aarthi-2004" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> Open GitHub</a>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
